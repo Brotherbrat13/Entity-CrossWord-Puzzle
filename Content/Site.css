@@ -115,7 +115,7 @@ h5, h6 {
     }
 
 header .content-wrapper {
-    padding-top: 20px; 
+    padding-top: 30px; 
 }
 
 footer {
@@ -153,19 +153,26 @@ footer {
 }
 
     #login a {
-        background-color: #d3dce0;
+        background-color: #7ac0da;
         margin-left: 10px;
-        margin-right: 3px;
-        padding: 2px 3px;
-        text-decoration: none;
+        margin-right: 10px;
+        padding: 9px 30px;
+        text-decoration: none;    
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
     }
 
-    #login a.email {
+    #login a:hover{
+        background-color: green;
+    }
+
+   /* #login a.email {
         background: none;
         margin: 0;
         padding: 0;
         text-decoration: underline;
-    }
+    }*/
 
     #login ul {
         margin: 0;

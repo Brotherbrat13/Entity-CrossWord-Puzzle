@@ -1,0 +1,27 @@
+﻿.logo{
+    margin-left: -3px;
+}
+#login text{
+    background-color: #7ac0da;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 9px 30px;
+    text-decoration: none;    
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.float-left{
+    margin-bottom: 25px;
+    margin-top:7px;
+}
+.float-right{
+    margin-right:-40px;
+}
+#login{
+    margin:0 0 20px;
+}
+
+html{
+    overflow: hidden;
+}

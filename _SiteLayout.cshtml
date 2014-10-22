@@ -5,6 +5,7 @@
         <title>@Page.Title - TriGuy Gaming</title>
         <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
         <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Tweaks.css" rel="stylesheet" type="text/css" />
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <script src="~/Scripts/jquery-1.10.2.min.js"></script>
         <script src="~/Scripts/jquery-ui-1.10.3.js"></script>
@@ -15,23 +16,28 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title"><a href="~/">TriGuy Gaming<img src = "../Images/TriForceLogo.png" height="30" width="30"></a></p>
+                    <p class="site-title"><a href="~/"><img class="logo" src="../Images/TriForceLogo.png" height="50" width="50"> &nbsp; TriGuy Gaming</a></p>
                 </div>
                 <div class="float-right">
                     <section id="login">
                         @if (WebSecurity.IsAuthenticated) {
                             <text>
-                                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                                <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>
                                 <form id="logoutForm" action="~/Account/Logout" method="post">
                                     @AntiForgery.GetHtml()
                                     <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
                                 </form>
                             </text>
-                        } else {
-                            <ul>
-                                <li><a href="~/Account/Register">Register</a></li>
-                                <li><a href="~/Account/Login">Log in</a></li>
-                            </ul>
+                        }
+                        else
+                        {
+                            <div class="account">
+                                <ul>
+                                    <li><a href="~/Account/Register">Register</a></li>
+                                    <li><a href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            </div>
+                           
                         }
                     </section>
                     <nav>
